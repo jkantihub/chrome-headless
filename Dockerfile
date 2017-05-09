@@ -23,6 +23,8 @@ RUN echo "chrome ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/chrome
 RUN chmod 0440 /etc/sudoers.d/chrome  
 RUN export uid=500 gid=500  
 
+EXPOSE 9222
+
 USER chrome
 ENV HOME /home/chrome
 CMD /usr/bin/google-chrome --headless \
