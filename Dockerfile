@@ -28,5 +28,5 @@ EXPOSE 9222
 USER chrome
 ENV HOME /home/chrome
 CMD /usr/bin/google-chrome --headless \
-  --disable-gpu \ 
-  --remote-debugging-port=9222 'about:blank' &
+--disable-gpu \
+--remote-debugging-port=9222 'about:blank' &
