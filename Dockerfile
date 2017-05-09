@@ -6,10 +6,10 @@ MAINTAINER Kanti Jadia
 ENV DEBIAN_FRONTEND noninteractive
 
 # Repository info up to date 
-#RUN apt-get update
+RUN apt-get update
 
 # Install wget 
-RUN apt-get install -y wget
+RUN apt-get install -y wget sudo
 
 # Get Chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - &&\
