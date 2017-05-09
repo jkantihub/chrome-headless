@@ -1,5 +1,5 @@
 # Docker file to create a local Docker container for Google Chrome
-FROM ubuntu:16.04.1
+FROM ubuntu:16.04
 MAINTAINER Kanti Jadia
 
 # debconf to be non-interactive
